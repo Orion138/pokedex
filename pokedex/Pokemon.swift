@@ -197,6 +197,8 @@ class Pokemon {
                                 
                                 if let lvl = evolutions[0]["level"] as? Int {
                                     self._nextEvolutionLvl = "\(lvl)"
+                                } else {
+                                    self._nextEvolutionLvl = ""
                                 }
                                 
                                 print(self._nextEvolutionId)
